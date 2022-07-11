@@ -25,7 +25,9 @@
         "linebreak-style": 0,
         "import/prefer-default-export": "off",
         "no-console": "off",
-        "max-len": ["error", { "code": 160 }]
+        "max-len": ["error", { "code": 160 }],
+        "import/extensions": "off",
+        "lines-between-class-members": "off"
     },
     "globals": {
         "cy": true,
@@ -37,5 +39,12 @@
         "before": true,
         "afterEach": true,
         "after": true
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
     }
 }
